@@ -11,11 +11,15 @@ import com.droi.sdk.core.DroiReference;
 public class WeProductInOrder extends DroiObject {
 
     @DroiReference
-    WeBaseProduct product;    //商品信息
+    WeProduct product;    //商品信息
 
     @DroiExpose
     int amount;    //商品数量
 
     @DroiExpose
-    String orderStatus;    //订单状态
+    boolean returns;    //是否退货
+
+    @DroiExpose
+    boolean  sendFlag;  //标记单独商品是否发货
+
 }

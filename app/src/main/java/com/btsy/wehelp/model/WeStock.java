@@ -8,10 +8,10 @@ import com.droi.sdk.core.DroiReference;
  * Created by zhouzhongbo on 2017/6/26.
  */
 
-public class WeBaseStock extends DroiObject {
+public class WeStock extends DroiObject {
 
     @DroiReference
-    WeBaseProduct product;
+    WeProduct product;
 
     @DroiExpose
     int amount;
