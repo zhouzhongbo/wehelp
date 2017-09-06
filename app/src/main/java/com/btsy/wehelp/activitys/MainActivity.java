@@ -11,7 +11,7 @@ import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.btsy.wehelp.R;
 import com.btsy.wehelp.fragment.MineFragment;
-import com.btsy.wehelp.fragment.OrderFragment;
+import com.btsy.wehelp.fragment.SellsFragment;
 import com.btsy.wehelp.fragment.ReportFragment;
 import com.btsy.wehelp.fragment.ToolsFragment;
 
@@ -20,10 +20,10 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
     private String Tag="mainactivity";
     private BottomNavigationBar bottomNavigationBar;
     private BadgeItem numberBadgeItem;
-    private int lastSelectedPosition = 0;
+    private int lastSelectedPosition = 2;
 
     MineFragment mineFragment;
-    OrderFragment orderFragment;
+    SellsFragment orderFragment;
     ReportFragment reportFragment;
     ToolsFragment toolsFragment;
 
@@ -59,19 +59,20 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
                 .setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_RIPPLE);
 
         bottomNavigationBar
-                .addItem(new BottomNavigationItem(R.drawable.tools, R.string.tab_tool).setActiveColorResource(R.color.orange).setBadgeItem(numberBadgeItem))
-                .addItem(new BottomNavigationItem(R.drawable.report, R.string.tab_report).setActiveColorResource(R.color.teal))
-                .addItem(new BottomNavigationItem(R.drawable.order, R.string.tab_order).setActiveColorResource(R.color.blue))
-                .addItem(new BottomNavigationItem(R.drawable.mine, R.string.tab_mine).setActiveColorResource(R.color.brown))
+                .addItem(new BottomNavigationItem(R.drawable.tab_tools, R.string.tab_tool).setActiveColorResource(R.color.orange).setBadgeItem(numberBadgeItem))
+                .addItem(new BottomNavigationItem(R.drawable.tab_report, R.string.tab_report).setActiveColorResource(R.color.teal))
+                .addItem(new BottomNavigationItem(R.drawable.tab_order, R.string.tab_order).setActiveColorResource(R.color.blue))
+                .addItem(new BottomNavigationItem(R.drawable.tab_mine, R.string.tab_mine).setActiveColorResource(R.color.brown))
                 .setFirstSelectedPosition(lastSelectedPosition > 4 ? 4 : lastSelectedPosition)
                 .initialise();
         setDefaultFragment();
+
     }
 
     private void setDefaultFragment() {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
-        orderFragment = OrderFragment.newInstance("位置");
+        orderFragment = SellsFragment.newInstance("位置");
         transaction.replace(R.id.tabs, orderFragment);
         transaction.commit();
     }
@@ -98,7 +99,7 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
 
             case 2:
                 if (orderFragment == null) {
-                    orderFragment = OrderFragment.newInstance(getString(R.string.tab_order));
+                    orderFragment = SellsFragment.newInstance(getString(R.string.tab_order));
                 }
                 transaction.replace(R.id.tabs, orderFragment);
                 break;

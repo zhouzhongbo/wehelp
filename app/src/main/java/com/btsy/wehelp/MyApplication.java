@@ -1,6 +1,7 @@
 package com.btsy.wehelp;
 
 import android.app.Application;
+import android.content.ComponentCallbacks;
 
 import com.droi.sdk.core.Core;
 
@@ -14,4 +15,12 @@ public class MyApplication extends Application {
         super.onCreate();
         Core.initialize(this);
     }
+
+
+    @Override
+    public void registerComponentCallbacks(ComponentCallbacks callback) {
+        super.registerComponentCallbacks(callback);
+    }
+
+
 }

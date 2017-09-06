@@ -9,27 +9,68 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
         <activity android:name=".activitys.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
-
-
         <activity android:name=".activitys.MainActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data android:name="com.droi.sdk.application_id" android:value="g8ttmbzhaBROaa4vLyEMB5w95obeLbnblQAAoK8J" />
+
+        <meta-data
+            android:name="com.droi.sdk.application_id"
+            android:value="g8ttmbzhaBROaa4vLyEMB5w95obeLbnblQAAoK8J" />
         <!-- ChannelName 为开发者自定义的渠道名称 -->
-        <meta-data android:name="com.droi.sdk.channel_name" android:value="Droi" />
+        <meta-data
+            android:name="com.droi.sdk.channel_name"
+            android:value="Droi" />
+
+        <activity android:name=".activitys.IntroduceActivity" >
+            <intent-filter>
+                <action android:name="com.btsy.wehelp.tointroduce"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.ProductActivity" >
+            <intent-filter>
+                <action android:name="com.btsy.wehelp.toproduct"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".activitys.InventoryActivity" >
+            <intent-filter>
+                <action android:name="com.btsy.wehelp.toinventory"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".activitys.PurchaseActivity" >
+            <intent-filter>
+                <action android:name="com.btsy.wehelp.topurchase"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".activitys.CustomerActivity" >
+            <intent-filter>
+                <action android:name="com.btsy.wehelp.tocustomer"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".activitys.OrderActivity">
+            <intent-filter>
+                <action android:name="com.btsy.wehelp.toorder"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>

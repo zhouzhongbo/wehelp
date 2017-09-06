@@ -91,6 +91,7 @@ public class SplashActivity extends Activity{
         Intent mintent = new Intent(this,MainActivity.class);
         mintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(mintent);
+        finish();
     }
 
 

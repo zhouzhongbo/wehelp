@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.btsy.wehelp.R;
 
-public class BookingActivity extends AppCompatActivity {
+public class PurchaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_booking);
+        setContentView(R.layout.activity_purchase);
     }
 }
