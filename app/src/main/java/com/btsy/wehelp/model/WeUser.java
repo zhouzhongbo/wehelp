@@ -51,4 +51,80 @@ public class WeUser extends DroiUser{
         female
     }
 
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public DroiFile getUserIcon() {
+        return userIcon;
+    }
+
+    public void setUserIcon(DroiFile userIcon) {
+        this.userIcon = userIcon;
+    }
+
+    public sexvalue getSex() {
+        return Sex;
+    }
+
+    public int getCheckin() {
+        return checkin;
+    }
+
+    public void setCheckin(int checkin) {
+        this.checkin = checkin;
+    }
+
+    public int getIntegration() {
+        return integration;
+    }
+
+    public void setIntegration(int integration) {
+        this.integration = integration;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public boolean isVip() {
+        return isVip;
+    }
+
+    public void setVip(boolean vip) {
+        isVip = vip;
+    }
+
+    public WeVipInfo getVipInfo() {
+        return vipInfo;
+    }
+
+    public void setVipInfo(WeVipInfo vipInfo) {
+        this.vipInfo = vipInfo;
+    }
+
+    public String getRolo() {
+        return rolo;
+    }
+
+    public void setRolo(String rolo) {
+        this.rolo = rolo;
+    }
 }

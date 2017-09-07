@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.btsy.wehelp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -21,14 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.droi.sdk.application_id"
-            android:value="g8ttmbzhaBROaa4vLyEMB5w95obeLbnblQAAoK8J" />
-        <!-- ChannelName 为开发者自定义的渠道名称 -->
-        <meta-data
-            android:name="com.droi.sdk.channel_name"
-            android:value="Droi" />
 
         <activity android:name=".activitys.IntroduceActivity" >
             <intent-filter>
@@ -71,6 +65,19 @@
             </intent-filter>
 
         </activity>
+
+        <activity android:name=".activitys.LoginActivity"></activity>
+
+
+
+        <meta-data
+            android:name="com.droi.sdk.application_id"
+            android:value="g8ttmbzhaBROaa4vLyEMB5w95obeLbnblQAAoK8J" />
+        <!-- ChannelName 为开发者自定义的渠道名称 -->
+        <meta-data
+            android:name="com.droi.sdk.channel_name"
+            android:value="Droi" />
+
     </application>
 
 </manifest>

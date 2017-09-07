@@ -54,4 +54,7 @@ dependencies {
     compile 'com.jph.takephoto:takephoto_library:4.0.3'
     testCompile 'junit:junit:4.12'
     apt 'com.droi.sdk:annotationprocessor:+'
+
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

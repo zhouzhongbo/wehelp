@@ -6,6 +6,7 @@ import com.droi.sdk.core.DroiObject;
 import com.droi.sdk.core.DroiReference;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zhouzhongbo on 2017/6/26.
@@ -26,7 +27,7 @@ public class WeProduct extends DroiObject {
     boolean isValid;    //商品信息是否可用(信息废弃)
 
     @DroiExpose
-    DroiFile headerImage;    //商品主图
+    List<DroiFile> headerImage;    //商品图片
 
     @DroiExpose
     List<DroiFile> imagelList;    //商品描述图列表
@@ -48,6 +49,10 @@ public class WeProduct extends DroiObject {
 
     @DroiExpose
     String color;    //商品颜色
+
+    @DroiExpose
+    DroiObject  property_add;    //其他属性描述，可以自行添加
+
 
     @DroiExpose      //二维码
     String QRcode;

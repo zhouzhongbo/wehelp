@@ -3,6 +3,7 @@ package com.btsy.wehelp.activitys;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -124,5 +125,12 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
     @Override
     public void onTabReselected(int i) {
         Log.d(Tag,"onTabReselected:"+i);
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d("zzb","11resultcode ="+resultCode+";resultCode="+resultCode+"!");
     }
 }
