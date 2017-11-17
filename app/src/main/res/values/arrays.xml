@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="order_button_text">
+        <item>使用介绍</item>
+        <item>商品信息</item>
+        <item>库存管理</item>
+        <item>客户资料</item>
+        <item>进货管理</item>
+        <item>订单管理</item>
+    </string-array>
+
+    <integer-array name="order_button_img">
+        <item>@drawable/o_introduce</item>
+        <item>@drawable/o_products</item>
+        <item>@drawable/o_stores</item>
+        <item>@drawable/o_customer</item>
+        <item>@drawable/o_bookings</item>
+        <item>@drawable/o_sellorders</item>
+    </integer-array>
+
+    <string-array name="type_one">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="list_muyin">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="list_meizhuang">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+    <string-array name="list_baojian">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="list_jiaju">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="list_fushi">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+    <string-array name="list_other">
+        <item></item>
+    </string-array>
+</resources>

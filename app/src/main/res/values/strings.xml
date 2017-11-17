@@ -10,25 +10,6 @@
     <string name="tab_order">订单</string>
     <string name="tab_mine">我的</string>
 
-    <string-array name="order_button_text">
-        <item>使用介绍</item>
-        <item>商品信息</item>
-        <item>库存管理</item>
-        <item>客户资料</item>
-        <item>进货管理</item>
-        <item>订单管理</item>
-    </string-array>
-
-    <integer-array name="order_button_img">
-        <item>@drawable/o_introduce</item>
-        <item>@drawable/o_products</item>
-        <item>@drawable/o_stores</item>
-        <item>@drawable/o_customer</item>
-        <item>@drawable/o_bookings</item>
-        <item>@drawable/o_sellorders</item>
-    </integer-array>
-
-
     <!--mine string-->
     <string name="login_on">登录</string>
     <string name="register">注册</string>
@@ -108,5 +89,47 @@
 
     <string name="hint_nickname">请输入昵称</string>
     <string name="hint_address">请输入地址</string>
+
+
+    <!--product type-->
+    <string name="type_one_muying">母婴</string>
+    <string name="type_one_meizhuang">美妆</string>
+    <string name="type_one_baojian">保健</string>
+    <string name="type_one_jiaju">家具</string>
+    <string name="type_one_fushi">服饰</string>
+    <string name="type_one_qita">其他</string>
+
+    <string name="type_muying_1">母婴奶粉</string>
+    <string name="type_muying_2">母婴纸尿布</string>
+    <string name="type_muying_3">母婴辅食</string>
+    <string name="type_muying_4">母婴童装</string>
+    <string name="type_muying_5">母婴孕妈</string>
+    <string name="type_muying_6">母婴洗护</string>
+
+
+    <string name="type_meizhuang_1">美妆护肤</string>
+    <string name="type_meizhuang_2">美妆彩妆</string>
+    <string name="type_meizhuang_3">美妆面膜</string>
+    <string name="type_meizhuang_4">美妆香水</string>
+
+    <string name="type_baojian_1">保健女生</string>
+    <string name="type_baojian_2">保健男生</string>
+    <string name="type_baojian_3">保健长辈</string>
+    <string name="type_baojian_4">保健零食</string>
+    <string name="type_baojian_5">保健儿童</string>
+
+    <string name="type_jiaju_1">家居个人</string>
+    <string name="type_jiaju_2">家居家电</string>
+    <string name="type_jiaju_3">家居清洁</string>
+    <string name="type_jiaju_4">家居厨房</string>
+
+    <string name="type_fushi_1">服饰儿童</string>
+    <string name="type_fushi_2">服饰鞋靴</string>
+    <string name="type_fushi_3">服饰女包</string>
+    <string name="type_fushi_4">服饰配饰</string>
+    <string name="type_fushi_5">服饰男包</string>
+    <string name="type_fushi_6">母婴手表</string>
+
+    <string name="type_qita_1">其他</string>
 
 </resources>
