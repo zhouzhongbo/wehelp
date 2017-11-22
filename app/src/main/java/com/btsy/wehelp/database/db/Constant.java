@@ -1,4 +1,4 @@
-package com.btsy.wehelp.database;
+package com.btsy.wehelp.database.db;
 
 /**
  * Created by zhouzhongbo on 2017/11/17.

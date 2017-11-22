@@ -1,4 +1,4 @@
-package com.btsy.wehelp.model;
+package com.btsy.wehelp.database.dao;
 
 import com.droi.sdk.core.DroiExpose;
 import com.droi.sdk.core.DroiFile;

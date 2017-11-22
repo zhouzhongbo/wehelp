@@ -1,6 +1,5 @@
 package com.btsy.wehelp.fragment;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
@@ -25,7 +24,7 @@ import android.widget.Toast;
 
 import com.btsy.wehelp.R;
 import com.btsy.wehelp.activitys.LoginActivity;
-import com.btsy.wehelp.model.WeUser;
+import com.btsy.wehelp.database.dao.WeUser;
 import com.btsy.wehelp.tools.UnitUtil;
 import com.btsy.wehelp.view.CircleImageView;
 import com.bumptech.glide.Glide;
@@ -38,18 +37,12 @@ import com.jph.takephoto.app.TakePhotoImpl;
 import com.jph.takephoto.model.CropOptions;
 import com.jph.takephoto.model.InvokeParam;
 import com.jph.takephoto.model.TContextWrap;
-import com.jph.takephoto.model.TImage;
 import com.jph.takephoto.model.TResult;
 import com.jph.takephoto.permission.InvokeListener;
 import com.jph.takephoto.permission.PermissionManager;
 import com.jph.takephoto.permission.TakePhotoInvocationHandler;
 
 import java.io.File;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-import butterknife.Unbinder;
 
 /**
  * Created by zhouzhongbo on 2017/9/1.

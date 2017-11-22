@@ -1,6 +1,4 @@
-package com.btsy.wehelp.model;
-
-import android.support.annotation.StringDef;
+package com.btsy.wehelp.database.dao;
 
 import com.droi.sdk.core.DroiExpose;
 import com.droi.sdk.core.DroiFile;

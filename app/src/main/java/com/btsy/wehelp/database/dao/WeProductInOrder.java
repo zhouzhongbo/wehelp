@@ -1,10 +1,8 @@
-package com.btsy.wehelp.model;
+package com.btsy.wehelp.database.dao;
 
 import com.droi.sdk.core.DroiExpose;
 import com.droi.sdk.core.DroiObject;
 import com.droi.sdk.core.DroiReference;
-
-import java.util.List;
 
 /**
  * Created by zhouzhongbo on 2017/6/26.

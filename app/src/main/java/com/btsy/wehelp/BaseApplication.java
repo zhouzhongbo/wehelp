@@ -2,14 +2,15 @@ package com.btsy.wehelp;
 
 import android.app.Application;
 import android.content.ComponentCallbacks;
+import android.content.Context;
 
-import com.btsy.wehelp.model.WeCustomer;
-import com.btsy.wehelp.model.WeOrder;
-import com.btsy.wehelp.model.WeProduct;
-import com.btsy.wehelp.model.WeProductInOrder;
-import com.btsy.wehelp.model.WeStock;
-import com.btsy.wehelp.model.WeUser;
-import com.btsy.wehelp.model.WeVipInfo;
+import com.btsy.wehelp.database.dao.WeCustomer;
+import com.btsy.wehelp.database.dao.WeOrder;
+import com.btsy.wehelp.database.dao.WeProduct;
+import com.btsy.wehelp.database.dao.WeProductInOrder;
+import com.btsy.wehelp.database.dao.WeStock;
+import com.btsy.wehelp.database.dao.WeUser;
+import com.btsy.wehelp.database.dao.WeVipInfo;
 import com.droi.sdk.core.Core;
 import com.droi.sdk.core.DroiObject;
 import com.droi.sdk.core.DroiPermission;
@@ -18,7 +19,19 @@ import com.droi.sdk.core.DroiPermission;
  * Created by zhouzhongbo on 2017/6/26.
  */
 
-public class MyApplication extends Application {
+public class BaseApplication extends Application {
+
+
+    private static BaseApplication mApplication;
+
+    /**
+     * 获取Context
+     * @return 返回Context的对象
+     */
+    public static Context getContext(){
+        return mApplication.getApplicationContext();
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();

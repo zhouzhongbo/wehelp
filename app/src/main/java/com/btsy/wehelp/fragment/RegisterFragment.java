@@ -18,7 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.btsy.wehelp.R;
-import com.btsy.wehelp.model.WeUser;
+import com.btsy.wehelp.database.dao.WeUser;
 import com.droi.sdk.DroiError;
 import com.droi.sdk.core.DroiUser;
 
